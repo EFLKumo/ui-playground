@@ -1,0 +1,4 @@
+{
+  "js/ts.preferences.autoImportFileExcludePatterns": ["@base-ui/react"],
+  "js/ts.preferences.importModuleSpecifier": "non-relative"
+}

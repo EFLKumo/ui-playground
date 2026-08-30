@@ -1,4 +1,4 @@
-import { Figtree, Geist_Mono, Instrument_Sans } from "next/font/google";
+import { Figtree, Instrument_Sans, JetBrains_Mono } from "next/font/google";
 
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -7,14 +7,14 @@ import { cn } from "@/lib/utils";
 
 const instrumentSansHeading = Instrument_Sans({
   subsets: ["latin"],
-  variable: "--font-heading",
+  variable: "--font-instrument-sans",
 });
 
-const figtree = Figtree({ subsets: ["latin"], variable: "--font-sans" });
+const figtree = Figtree({ subsets: ["latin"], variable: "--font-figtree" });
 
-const fontMono = Geist_Mono({
+const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
-  variable: "--font-mono",
+  variable: "--font-jetbrains-mono",
 });
 
 export default function RootLayout({
@@ -28,7 +28,7 @@ export default function RootLayout({
       suppressHydrationWarning
       className={cn(
         "antialiased",
-        fontMono.variable,
+        jetbrainsMono.variable,
         "font-sans",
         figtree.variable,
         instrumentSansHeading.variable,
